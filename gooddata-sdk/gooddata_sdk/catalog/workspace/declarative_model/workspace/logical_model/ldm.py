@@ -6,12 +6,14 @@ from typing import List, Optional, Type
 
 import attr
 
+from gooddata_api_client.model.declarative_dataset_extension import DeclarativeDatasetExtension
 from gooddata_api_client.model.declarative_ldm import DeclarativeLdm
 from gooddata_api_client.model.declarative_model import DeclarativeModel
 from gooddata_sdk.catalog.base import Base
 from gooddata_sdk.catalog.workspace.declarative_model.workspace.logical_model.dataset.dataset import (
     LAYOUT_DATASETS_DIR,
     CatalogDeclarativeDataset,
+    CatalogDeclarativeWorkspaceDataFilterReferences,
 )
 from gooddata_sdk.catalog.workspace.declarative_model.workspace.logical_model.date_dataset.date_dataset import (
     LAYOUT_DATE_INSTANCES_DIR,
@@ -44,6 +46,7 @@ class CatalogDeclarativeModel(Base):
 class CatalogDeclarativeLdm(Base):
     datasets: List[CatalogDeclarativeDataset] = attr.field(factory=list)
     date_instances: List[CatalogDeclarativeDateDataset] = attr.field(factory=list)
+    dataset_extensions: Optional[List[CatalogDeclarativeDatasetExtension]] = None
 
     @staticmethod
     def client_class() -> Type[DeclarativeLdm]:
@@ -189,3 +192,13 @@ class CatalogDeclarativeLdm(Base):
                         new_columns.append(self._change_case(reference_column, upper_case))
                     reference.source_columns = new_columns
         return self
+
+
+@attr.s(auto_attribs=True, kw_only=True)
+class CatalogDeclarativeDatasetExtension(Base):
+    id: str
+    workspace_data_filter_references: Optional[List[CatalogDeclarativeWorkspaceDataFilterReferences]] = None
+
+    @staticmethod
+    def client_class() -> Type[DeclarativeDatasetExtension]:
+        return DeclarativeDatasetExtension

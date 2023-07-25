@@ -7,6 +7,7 @@ from typing import List, Optional, Type
 import attr
 
 from gooddata_api_client.model.data_source_table_identifier import DataSourceTableIdentifier
+from gooddata_api_client.model.dataset_workspace_data_filter_identifier import DatasetWorkspaceDataFilterIdentifier
 from gooddata_api_client.model.declarative_attribute import DeclarativeAttribute
 from gooddata_api_client.model.declarative_dataset import DeclarativeDataset
 from gooddata_api_client.model.declarative_dataset_sql import DeclarativeDatasetSql
@@ -14,6 +15,9 @@ from gooddata_api_client.model.declarative_fact import DeclarativeFact
 from gooddata_api_client.model.declarative_label import DeclarativeLabel
 from gooddata_api_client.model.declarative_reference import DeclarativeReference
 from gooddata_api_client.model.declarative_workspace_data_filter_column import DeclarativeWorkspaceDataFilterColumn
+from gooddata_api_client.model.declarative_workspace_data_filter_references import (
+    DeclarativeWorkspaceDataFilterReferences,
+)
 from gooddata_sdk.catalog.base import Base
 from gooddata_sdk.catalog.identifier import CatalogGrainIdentifier, CatalogLabelIdentifier, CatalogReferenceIdentifier
 from gooddata_sdk.utils import read_layout_from_file, write_layout_to_file
@@ -34,6 +38,7 @@ class CatalogDeclarativeDataset(Base):
     sql: Optional[CatalogDeclarativeDatasetSql] = None
     tags: Optional[List[str]] = None
     workspace_data_filter_columns: Optional[List[CatalogDeclarativeWorkspaceDataFilterColumn]] = None
+    workspace_data_filter_references: Optional[List[CatalogDeclarativeWorkspaceDataFilterReferences]] = None
 
     @staticmethod
     def client_class() -> Type[DeclarativeDataset]:
@@ -136,3 +141,24 @@ class CatalogDeclarativeWorkspaceDataFilterColumn(Base):
     @staticmethod
     def client_class() -> Type[DeclarativeWorkspaceDataFilterColumn]:
         return DeclarativeWorkspaceDataFilterColumn
+
+
+@attr.s(auto_attribs=True, kw_only=True)
+class CatalogDeclarativeWorkspaceDataFilterReferences(Base):
+    filter_id: CatalogDatasetWorkspaceDataFilterIdentifier
+    filter_column: str
+    filter_column_data_type: str
+
+    @staticmethod
+    def client_class() -> Type[DeclarativeWorkspaceDataFilterReferences]:
+        return DeclarativeWorkspaceDataFilterReferences
+
+
+@attr.s(auto_attribs=True, kw_only=True)
+class CatalogDatasetWorkspaceDataFilterIdentifier(Base):
+    id: str
+    type: str
+
+    @staticmethod
+    def client_class() -> Type[DatasetWorkspaceDataFilterIdentifier]:
+        return DatasetWorkspaceDataFilterIdentifier
