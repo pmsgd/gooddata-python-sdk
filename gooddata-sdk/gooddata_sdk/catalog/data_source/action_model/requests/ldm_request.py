@@ -10,6 +10,7 @@ from gooddata_api_client.model.pdm_ldm_request import PdmLdmRequest
 from gooddata_api_client.model.pdm_sql import PdmSql
 from gooddata_sdk.catalog.base import Base
 from gooddata_sdk.catalog.data_source.action_model.sql_column import SqlColumn
+from gooddata_sdk.catalog.data_source.declarative_model.physical_model.pdm import CatalogDeclarativeTable
 
 
 @attr.s(auto_attribs=True, kw_only=True)
@@ -26,6 +27,7 @@ class CatalogPdmSql(Base):
 @attr.s(auto_attribs=True, kw_only=True)
 class CatalogPdmLdmRequest(Base):
     sqls: List[CatalogPdmSql]
+    tables: Optional[List[CatalogDeclarativeTable]] = None
 
     @staticmethod
     def client_class() -> Type[PdmLdmRequest]:

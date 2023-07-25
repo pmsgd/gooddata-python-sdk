@@ -4,6 +4,7 @@ from __future__ import annotations
 import functools
 from pathlib import Path
 from typing import Any, List, Optional
+from warnings import warn
 
 from gooddata_api_client.exceptions import NotFoundException
 from gooddata_api_client.model.declarative_pdm import DeclarativePdm
@@ -260,6 +261,12 @@ class CatalogDataSourceService(CatalogServiceBase):
             CatalogDeclarativeTables:
                 Physical Data Model object.
         """
+        warn(
+            "This is deprecated and it will be removed in the future.",
+            DeprecationWarning,
+            stacklevel=2,
+        )
+
         return CatalogDeclarativeTables.from_api(self._layout_api.get_pdm_layout(data_source_id).get("pdm"))
 
     def put_declarative_pdm(self, data_source_id: str, declarative_tables: CatalogDeclarativeTables) -> None:
@@ -274,6 +281,12 @@ class CatalogDataSourceService(CatalogServiceBase):
         Returns:
             None
         """
+        warn(
+            "This is deprecated and it will be removed in the future.",
+            DeprecationWarning,
+            stacklevel=2,
+        )
+
         declarative_pdm = DeclarativePdm(pdm=declarative_tables.to_api())
         self._layout_api.set_pdm_layout(data_source_id, declarative_pdm)
 
@@ -297,6 +310,12 @@ class CatalogDataSourceService(CatalogServiceBase):
         Returns:
             None
         """
+        warn(
+            "This is deprecated and it will be removed in PythonSDK XYZ.",
+            DeprecationWarning,
+            stacklevel=2,
+        )
+
         data_source_folder = self.data_source_folder(data_source_id, layout_root_path)
         self.get_declarative_pdm(data_source_id).store_to_disk(data_source_folder)
 

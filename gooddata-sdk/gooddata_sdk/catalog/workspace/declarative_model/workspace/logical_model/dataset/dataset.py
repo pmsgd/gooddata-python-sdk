@@ -35,6 +35,7 @@ class CatalogDeclarativeDataset(Base):
     attributes: Optional[List[CatalogDeclarativeAttribute]] = None
     facts: Optional[List[CatalogDeclarativeFact]] = None
     data_source_table_id: Optional[CatalogDataSourceTableIdentifier] = None
+    data_source_table_path: Optional[List[str]] = None
     sql: Optional[CatalogDeclarativeDatasetSql] = None
     tags: Optional[List[str]] = None
     workspace_data_filter_columns: Optional[List[CatalogDeclarativeWorkspaceDataFilterColumn]] = None

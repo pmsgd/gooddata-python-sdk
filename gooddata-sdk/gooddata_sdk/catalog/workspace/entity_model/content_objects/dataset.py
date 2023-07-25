@@ -1,7 +1,7 @@
 # (C) 2022 GoodData Corporation
 from __future__ import annotations
 
-from typing import Any, Optional, Union, cast
+from typing import Any, List, Optional, Union, cast
 
 import attr
 import attrs
@@ -19,6 +19,9 @@ from gooddata_sdk.utils import IdObjType, id_obj_to_key, safeget, safeget_list
 
 @attr.s(auto_attribs=True, kw_only=True)
 class CatalogLabel(AttrCatalogEntity):
+    source_column: Optional[str] = None
+    source_column_data_type: Optional[str] = None
+
     @staticmethod
     def client_class() -> Any:
         return JsonApiLabelOut
@@ -39,6 +42,9 @@ class CatalogLabel(AttrCatalogEntity):
 
 @attr.s(auto_attribs=True, kw_only=True)
 class CatalogAttribute(AttrCatalogEntity):
+    source_column: Optional[str] = None
+    source_column_data_type: Optional[str] = None
+
     @staticmethod
     def client_class() -> Any:
         return JsonApiAttributeOut
@@ -89,6 +95,9 @@ class CatalogAttribute(AttrCatalogEntity):
 
 @attr.s(auto_attribs=True, kw_only=True)
 class CatalogFact(AttrCatalogEntity):
+    source_column: Optional[str] = None
+    source_column_data_type: Optional[str] = None
+
     @staticmethod
     def client_class() -> Any:
         return JsonApiFactOut
@@ -101,6 +110,8 @@ class CatalogFact(AttrCatalogEntity):
 
 @attr.s(auto_attribs=True, kw_only=True)
 class CatalogDataset(AttrCatalogEntity):
+    data_source_table_path: Optional[List[str]] = None
+
     @property
     def dataset_type(self) -> str:
         return self.json_api_attributes["type"]
