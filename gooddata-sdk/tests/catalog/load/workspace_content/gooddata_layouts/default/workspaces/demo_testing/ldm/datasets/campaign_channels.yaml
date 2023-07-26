@@ -4,6 +4,7 @@ attributes:
     id: campaign_channel_id
     labels: []
     sourceColumn: campaign_channel_id
+    sourceColumnDataType: INT
     tags:
       - Campaign channels
     title: Campaign channel id
@@ -11,6 +12,7 @@ attributes:
     id: campaign_channels.category
     labels: []
     sourceColumn: category
+    sourceColumnDataType: STRING
     tags:
       - Campaign channels
     title: Category
@@ -18,6 +20,7 @@ attributes:
     id: type
     labels: []
     sourceColumn: type
+    sourceColumnDataType: STRING
     tags:
       - Campaign channels
     title: Type
@@ -30,12 +33,14 @@ facts:
   - description: Budget
     id: budget
     sourceColumn: budget
+    sourceColumnDataType: NUMERIC
     tags:
       - Campaign channels
     title: Budget
   - description: Spend
     id: spend
     sourceColumn: spend
+    sourceColumnDataType: NUMERIC
     tags:
       - Campaign channels
     title: Spend
@@ -50,6 +55,8 @@ references:
     multivalue: false
     sourceColumns:
       - campaign_id
+    sourceColumnDataTypes:
+      - INT
 tags:
   - Campaign channels
 title: Campaign channels

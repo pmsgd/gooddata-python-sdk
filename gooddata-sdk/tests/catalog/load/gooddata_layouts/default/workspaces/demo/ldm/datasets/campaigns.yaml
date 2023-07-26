@@ -4,6 +4,7 @@ attributes:
     id: campaign_id
     labels: []
     sourceColumn: campaign_id
+    sourceColumnDataType: INT
     tags:
       - Campaigns
     title: Campaign id
@@ -11,6 +12,7 @@ attributes:
     id: campaign_name
     labels: []
     sourceColumn: campaign_name
+    sourceColumnDataType: STRING
     tags:
       - Campaigns
     title: Campaign name

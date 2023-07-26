@@ -4,6 +4,7 @@ attributes:
     id: customer_id
     labels: []
     sourceColumn: customer_id
+    sourceColumnDataType: INT
     tags:
       - Customers
     title: Customer id
@@ -11,6 +12,7 @@ attributes:
     id: customer_name
     labels: []
     sourceColumn: customer_name
+    sourceColumnDataType: STRING
     tags:
       - Customers
     title: Customer name
@@ -18,6 +20,7 @@ attributes:
     id: region
     labels: []
     sourceColumn: region
+    sourceColumnDataType: STRING
     tags:
       - Customers
     title: Region
@@ -27,10 +30,12 @@ attributes:
       - description: Location
         id: geo__state__location
         sourceColumn: geo__state__location
+        sourceColumnDataType: STRING
         tags:
           - Customers
         title: Location
     sourceColumn: state
+    sourceColumnDataType: STRING
     tags:
       - Customers
     title: State

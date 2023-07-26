@@ -74,7 +74,7 @@ interactions:
         X-XSS-Protection:
           - 1 ; mode=block
         content-length:
-          - '35587'
+          - '35438'
       body:
         string:
           workspaceDataFilters:
@@ -1464,9 +1464,6 @@ interactions:
                       dataSourceTableId:
                         dataSourceId: demo-test-ds
                         id: campaign_channels
-                        path:
-                          - demo
-                          - campaign_channels
                         type: dataSource
                       description: Campaign channels
                       facts:
@@ -1520,9 +1517,6 @@ interactions:
                       dataSourceTableId:
                         dataSourceId: demo-test-ds
                         id: campaigns
-                        path:
-                          - demo
-                          - campaigns
                         type: dataSource
                       description: Campaigns
                       facts: []
@@ -1577,9 +1571,6 @@ interactions:
                       dataSourceTableId:
                         dataSourceId: demo-test-ds
                         id: customers
-                        path:
-                          - demo
-                          - customers
                         type: dataSource
                       description: Customers
                       facts: []
@@ -1619,9 +1610,6 @@ interactions:
                       dataSourceTableId:
                         dataSourceId: demo-test-ds
                         id: order_lines
-                        path:
-                          - demo
-                          - order_lines
                         type: dataSource
                       description: Order lines
                       facts:
@@ -1713,9 +1701,6 @@ interactions:
                       dataSourceTableId:
                         dataSourceId: demo-test-ds
                         id: products
-                        path:
-                          - demo
-                          - products
                         type: dataSource
                       description: Products
                       facts: []
@@ -1886,7 +1871,7 @@ interactions:
         X-XSS-Protection:
           - 1 ; mode=block
         content-length:
-          - '35587'
+          - '35438'
       body:
         string:
           workspaceDataFilters:
@@ -3276,9 +3261,6 @@ interactions:
                       dataSourceTableId:
                         dataSourceId: demo-test-ds
                         id: campaign_channels
-                        path:
-                          - demo
-                          - campaign_channels
                         type: dataSource
                       description: Campaign channels
                       facts:
@@ -3332,9 +3314,6 @@ interactions:
                       dataSourceTableId:
                         dataSourceId: demo-test-ds
                         id: campaigns
-                        path:
-                          - demo
-                          - campaigns
                         type: dataSource
                       description: Campaigns
                       facts: []
@@ -3389,9 +3368,6 @@ interactions:
                       dataSourceTableId:
                         dataSourceId: demo-test-ds
                         id: customers
-                        path:
-                          - demo
-                          - customers
                         type: dataSource
                       description: Customers
                       facts: []
@@ -3431,9 +3407,6 @@ interactions:
                       dataSourceTableId:
                         dataSourceId: demo-test-ds
                         id: order_lines
-                        path:
-                          - demo
-                          - order_lines
                         type: dataSource
                       description: Order lines
                       facts:
@@ -3525,9 +3498,6 @@ interactions:
                       dataSourceTableId:
                         dataSourceId: demo-test-ds
                         id: products
-                        path:
-                          - demo
-                          - products
                         type: dataSource
                       description: Products
                       facts: []

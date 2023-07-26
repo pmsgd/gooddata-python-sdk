@@ -28,7 +28,7 @@ interactions:
         Connection:
           - keep-alive
         Content-Length:
-          - '457'
+          - '760'
         Content-Security-Policy:
           - 'default-src ''self'' *.wistia.com *.wistia.net; script-src ''self'' ''unsafe-inline''
             ''unsafe-eval'' *.wistia.com *.wistia.net *.hsforms.net *.hsforms.com
@@ -76,6 +76,17 @@ interactions:
       body:
         string:
           data:
+            - id: demo-bigquery-ds
+              type: dataSource
+              attributes:
+                url: jdbc:postgresql://localhost:5432/demo?autosave=false
+                username: demouser
+                enableCaching: false
+                name: Test2
+                type: POSTGRESQL
+                schema: demo
+              links:
+                self: http://localhost:3000/api/v1/entities/dataSources/demo-bigquery-ds
             - id: demo-test-ds
               type: dataSource
               attributes:

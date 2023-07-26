@@ -74,7 +74,7 @@ interactions:
         X-XSS-Protection:
           - 1 ; mode=block
         content-length:
-          - '33679'
+          - '33241'
       body:
         string:
           analytics:
@@ -1398,7 +1398,7 @@ interactions:
                     id: campaign_channel_id
                     labels: []
                     sourceColumn: campaign_channel_id
-                    sourceColumnDataType: STRING
+                    sourceColumnDataType: INT
                     tags:
                       - Campaign channels
                     title: Campaign channel id
@@ -1421,9 +1421,6 @@ interactions:
                 dataSourceTableId:
                   dataSourceId: demo-test-ds
                   id: campaign_channels
-                  path:
-                    - demo
-                    - campaign_channels
                   type: dataSource
                 description: Campaign channels
                 facts:
@@ -1477,9 +1474,6 @@ interactions:
                 dataSourceTableId:
                   dataSourceId: demo-test-ds
                   id: campaigns
-                  path:
-                    - demo
-                    - campaigns
                   type: dataSource
                 description: Campaigns
                 facts: []
@@ -1534,9 +1528,6 @@ interactions:
                 dataSourceTableId:
                   dataSourceId: demo-test-ds
                   id: customers
-                  path:
-                    - demo
-                    - customers
                   type: dataSource
                 description: Customers
                 facts: []
@@ -1553,7 +1544,7 @@ interactions:
                     id: order_id
                     labels: []
                     sourceColumn: order_id
-                    sourceColumnDataType: STRING
+                    sourceColumnDataType: INT
                     tags:
                       - Order lines
                     title: Order id
@@ -1561,7 +1552,7 @@ interactions:
                     id: order_line_id
                     labels: []
                     sourceColumn: order_line_id
-                    sourceColumnDataType: STRING
+                    sourceColumnDataType: INT
                     tags:
                       - Order lines
                     title: Order line id
@@ -1576,9 +1567,6 @@ interactions:
                 dataSourceTableId:
                   dataSourceId: demo-test-ds
                   id: order_lines
-                  path:
-                    - demo
-                    - order_lines
                   type: dataSource
                 description: Order lines
                 facts:
@@ -1636,17 +1624,6 @@ interactions:
                 tags:
                   - Order lines
                 title: Order lines
-                workspaceDataFilterReferences:
-                  - filterColumn: wdf__region
-                    filterColumnDataType: STRING
-                    filterId:
-                      id: wdf__region
-                      type: workspaceDataFilter
-                  - filterColumn: wdf__state
-                    filterColumnDataType: STRING
-                    filterId:
-                      id: wdf__state
-                      type: workspaceDataFilter
               - attributes:
                   - description: Product id
                     id: product_id
@@ -1675,9 +1652,6 @@ interactions:
                 dataSourceTableId:
                   dataSourceId: demo-test-ds
                   id: products
-                  path:
-                    - demo
-                    - products
                   type: dataSource
                 description: Products
                 facts: []
@@ -1786,7 +1760,7 @@ interactions:
         X-XSS-Protection:
           - 1 ; mode=block
         content-length:
-          - '33679'
+          - '33241'
       body:
         string:
           analytics:
@@ -3110,7 +3084,7 @@ interactions:
                     id: campaign_channel_id
                     labels: []
                     sourceColumn: campaign_channel_id
-                    sourceColumnDataType: STRING
+                    sourceColumnDataType: INT
                     tags:
                       - Campaign channels
                     title: Campaign channel id
@@ -3133,9 +3107,6 @@ interactions:
                 dataSourceTableId:
                   dataSourceId: demo-test-ds
                   id: campaign_channels
-                  path:
-                    - demo
-                    - campaign_channels
                   type: dataSource
                 description: Campaign channels
                 facts:
@@ -3189,9 +3160,6 @@ interactions:
                 dataSourceTableId:
                   dataSourceId: demo-test-ds
                   id: campaigns
-                  path:
-                    - demo
-                    - campaigns
                   type: dataSource
                 description: Campaigns
                 facts: []
@@ -3246,9 +3214,6 @@ interactions:
                 dataSourceTableId:
                   dataSourceId: demo-test-ds
                   id: customers
-                  path:
-                    - demo
-                    - customers
                   type: dataSource
                 description: Customers
                 facts: []
@@ -3265,7 +3230,7 @@ interactions:
                     id: order_id
                     labels: []
                     sourceColumn: order_id
-                    sourceColumnDataType: STRING
+                    sourceColumnDataType: INT
                     tags:
                       - Order lines
                     title: Order id
@@ -3273,7 +3238,7 @@ interactions:
                     id: order_line_id
                     labels: []
                     sourceColumn: order_line_id
-                    sourceColumnDataType: STRING
+                    sourceColumnDataType: INT
                     tags:
                       - Order lines
                     title: Order line id
@@ -3288,9 +3253,6 @@ interactions:
                 dataSourceTableId:
                   dataSourceId: demo-test-ds
                   id: order_lines
-                  path:
-                    - demo
-                    - order_lines
                   type: dataSource
                 description: Order lines
                 facts:
@@ -3348,17 +3310,6 @@ interactions:
                 tags:
                   - Order lines
                 title: Order lines
-                workspaceDataFilterReferences:
-                  - filterColumn: wdf__region
-                    filterColumnDataType: STRING
-                    filterId:
-                      id: wdf__region
-                      type: workspaceDataFilter
-                  - filterColumn: wdf__state
-                    filterColumnDataType: STRING
-                    filterId:
-                      id: wdf__state
-                      type: workspaceDataFilter
               - attributes:
                   - description: Product id
                     id: product_id
@@ -3387,9 +3338,6 @@ interactions:
                 dataSourceTableId:
                   dataSourceId: demo-test-ds
                   id: products
-                  path:
-                    - demo
-                    - products
                   type: dataSource
                 description: Products
                 facts: []

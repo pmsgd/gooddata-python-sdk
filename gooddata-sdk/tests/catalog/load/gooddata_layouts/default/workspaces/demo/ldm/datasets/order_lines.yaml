@@ -4,6 +4,7 @@ attributes:
     id: order_id
     labels: []
     sourceColumn: order_id
+    sourceColumnDataType: INT
     tags:
       - Order lines
     title: Order id
@@ -11,6 +12,7 @@ attributes:
     id: order_line_id
     labels: []
     sourceColumn: order_line_id
+    sourceColumnDataType: INT
     tags:
       - Order lines
     title: Order line id
@@ -18,6 +20,7 @@ attributes:
     id: order_status
     labels: []
     sourceColumn: order_status
+    sourceColumnDataType: STRING
     tags:
       - Order lines
     title: Order status
@@ -30,12 +33,14 @@ facts:
   - description: Price
     id: price
     sourceColumn: price
+    sourceColumnDataType: NUMERIC
     tags:
       - Order lines
     title: Price
   - description: Quantity
     id: quantity
     sourceColumn: quantity
+    sourceColumnDataType: NUMERIC
     tags:
       - Order lines
     title: Quantity
@@ -50,24 +55,32 @@ references:
     multivalue: false
     sourceColumns:
       - campaign_id
+    sourceColumnDataTypes:
+      - INT
   - identifier:
       id: customers
       type: dataset
     multivalue: false
     sourceColumns:
       - customer_id
+    sourceColumnDataTypes:
+      - INT
   - identifier:
       id: date
       type: dataset
     multivalue: false
     sourceColumns:
       - date
+    sourceColumnDataTypes:
+      - DATE
   - identifier:
       id: products
       type: dataset
     multivalue: false
     sourceColumns:
       - product_id
+    sourceColumnDataTypes:
+      - INT
 tags:
   - Order lines
 title: Order lines

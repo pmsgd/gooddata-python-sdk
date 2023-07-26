@@ -76,18 +76,18 @@ interactions:
       body:
         string:
           data:
-            - id: price
+            - id: budget
               type: fact
               attributes:
-                title: Price
-                description: Price
+                title: Budget
+                description: Budget
                 tags:
-                  - Order lines
-                sourceColumn: price
+                  - Campaign channels
+                sourceColumn: budget
                 sourceColumnDataType: NUMERIC
                 areRelationsValid: true
               links:
-                self: http://localhost:3000/api/v1/entities/workspaces/demo/facts/price
+                self: http://localhost:3000/api/v1/entities/workspaces/demo/facts/budget
               meta:
                 origin:
                   originType: NATIVE
@@ -108,22 +108,6 @@ interactions:
                 origin:
                   originType: NATIVE
                   originId: demo
-            - id: budget
-              type: fact
-              attributes:
-                title: Budget
-                description: Budget
-                tags:
-                  - Campaign channels
-                sourceColumn: budget
-                sourceColumnDataType: NUMERIC
-                areRelationsValid: true
-              links:
-                self: http://localhost:3000/api/v1/entities/workspaces/demo/facts/budget
-              meta:
-                origin:
-                  originType: NATIVE
-                  originId: demo
             - id: quantity
               type: fact
               attributes:
@@ -136,6 +120,22 @@ interactions:
                 areRelationsValid: true
               links:
                 self: http://localhost:3000/api/v1/entities/workspaces/demo/facts/quantity
+              meta:
+                origin:
+                  originType: NATIVE
+                  originId: demo
+            - id: price
+              type: fact
+              attributes:
+                title: Price
+                description: Price
+                tags:
+                  - Order lines
+                sourceColumn: price
+                sourceColumnDataType: NUMERIC
+                areRelationsValid: true
+              links:
+                self: http://localhost:3000/api/v1/entities/workspaces/demo/facts/price
               meta:
                 origin:
                   originType: NATIVE

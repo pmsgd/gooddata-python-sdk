@@ -2272,6 +2272,7 @@
                   "id": "campaign_channel_id",
                   "labels": [],
                   "sourceColumn": "campaign_channel_id",
+                  "sourceColumnDataType": "STRING",
                   "tags": [
                     "Campaign channels"
                   ],
@@ -2282,6 +2283,7 @@
                   "id": "campaign_channels.category",
                   "labels": [],
                   "sourceColumn": "category",
+                  "sourceColumnDataType": "STRING",
                   "tags": [
                     "Campaign channels"
                   ],
@@ -2292,6 +2294,7 @@
                   "id": "type",
                   "labels": [],
                   "sourceColumn": "type",
+                  "sourceColumnDataType": "STRING",
                   "tags": [
                     "Campaign channels"
                   ],
@@ -2309,6 +2312,7 @@
                   "description": "Budget",
                   "id": "budget",
                   "sourceColumn": "budget",
+                  "sourceColumnDataType": "NUMERIC",
                   "tags": [
                     "Campaign channels"
                   ],
@@ -2318,6 +2322,7 @@
                   "description": "Spend",
                   "id": "spend",
                   "sourceColumn": "spend",
+                  "sourceColumnDataType": "NUMERIC",
                   "tags": [
                     "Campaign channels"
                   ],
@@ -2340,6 +2345,9 @@
                   "multivalue": false,
                   "sourceColumns": [
                     "campaign_id"
+                  ],
+                  "sourceColumnDataTypes": [
+                    "INT"
                   ]
                 }
               ],
@@ -2355,6 +2363,7 @@
                   "id": "campaign_id",
                   "labels": [],
                   "sourceColumn": "campaign_id",
+                  "sourceColumnDataType": "INT",
                   "tags": [
                     "Campaigns"
                   ],
@@ -2365,6 +2374,7 @@
                   "id": "campaign_name",
                   "labels": [],
                   "sourceColumn": "campaign_name",
+                  "sourceColumnDataType": "STRING",
                   "tags": [
                     "Campaigns"
                   ],
@@ -2398,6 +2408,7 @@
                   "id": "customer_id",
                   "labels": [],
                   "sourceColumn": "customer_id",
+                  "sourceColumnDataType": "INT",
                   "tags": [
                     "Customers"
                   ],
@@ -2408,6 +2419,7 @@
                   "id": "customer_name",
                   "labels": [],
                   "sourceColumn": "customer_name",
+                  "sourceColumnDataType": "STRING",
                   "tags": [
                     "Customers"
                   ],
@@ -2418,6 +2430,7 @@
                   "id": "region",
                   "labels": [],
                   "sourceColumn": "region",
+                  "sourceColumnDataType": "STRING",
                   "tags": [
                     "Customers"
                   ],
@@ -2431,6 +2444,7 @@
                       "description": "Location",
                       "id": "geo__state__location",
                       "sourceColumn": "geo__state__location",
+                      "sourceColumnDataType": "STRING",
                       "tags": [
                         "Customers"
                       ],
@@ -2438,6 +2452,7 @@
                     }
                   ],
                   "sourceColumn": "state",
+                  "sourceColumnDataType": "STRING",
                   "tags": [
                     "Customers"
                   ],
@@ -2471,6 +2486,7 @@
                   "id": "order_id",
                   "labels": [],
                   "sourceColumn": "order_id",
+                  "sourceColumnDataType": "STRING",
                   "tags": [
                     "Order lines"
                   ],
@@ -2481,6 +2497,7 @@
                   "id": "order_line_id",
                   "labels": [],
                   "sourceColumn": "order_line_id",
+                  "sourceColumnDataType": "STRING",
                   "tags": [
                     "Order lines"
                   ],
@@ -2491,6 +2508,7 @@
                   "id": "order_status",
                   "labels": [],
                   "sourceColumn": "order_status",
+                  "sourceColumnDataType": "STRING",
                   "tags": [
                     "Order lines"
                   ],
@@ -2508,6 +2526,7 @@
                   "description": "Price",
                   "id": "price",
                   "sourceColumn": "price",
+                  "sourceColumnDataType": "NUMERIC",
                   "tags": [
                     "Order lines"
                   ],
@@ -2517,6 +2536,7 @@
                   "description": "Quantity",
                   "id": "quantity",
                   "sourceColumn": "quantity",
+                  "sourceColumnDataType": "NUMERIC",
                   "tags": [
                     "Order lines"
                   ],
@@ -2539,6 +2559,9 @@
                   "multivalue": false,
                   "sourceColumns": [
                     "campaign_id"
+                  ],
+                  "sourceColumnDataTypes": [
+                    "INT"
                   ]
                 },
                 {
@@ -2549,6 +2572,9 @@
                   "multivalue": false,
                   "sourceColumns": [
                     "customer_id"
+                  ],
+                  "sourceColumnDataTypes": [
+                    "INT"
                   ]
                 },
                 {
@@ -2559,6 +2585,9 @@
                   "multivalue": false,
                   "sourceColumns": [
                     "date"
+                  ],
+                  "sourceColumnDataTypes": [
+                    "DATE"
                   ]
                 },
                 {
@@ -2569,7 +2598,20 @@
                   "multivalue": false,
                   "sourceColumns": [
                     "product_id"
+                  ],
+                  "sourceColumnDataTypes": [
+                    "INT"
                   ]
+                }
+              ],
+              "workspaceDataFilterReferences": [
+                {
+                  "filterId": {
+                    "id": "wdf__region",
+                    "type": "workspaceDataFilter"
+                  },
+                  "filterColumn": "wdf__region",
+                  "filterColumnDataType": "STRING"
                 }
               ],
               "tags": [
@@ -2584,6 +2626,7 @@
                   "id": "product_id",
                   "labels": [],
                   "sourceColumn": "product_id",
+                  "sourceColumnDataType": "INT",
                   "tags": [
                     "Products"
                   ],
@@ -2594,6 +2637,7 @@
                   "id": "product_name",
                   "labels": [],
                   "sourceColumn": "product_name",
+                  "sourceColumnDataType": "STRING",
                   "tags": [
                     "Products"
                   ],
@@ -2604,6 +2648,7 @@
                   "id": "products.category",
                   "labels": [],
                   "sourceColumn": "category",
+                  "sourceColumnDataType": "STRING",
                   "tags": [
                     "Products"
                   ],
@@ -2699,7 +2744,22 @@
         },
         "ldm": {
           "datasets": [],
-          "dateInstances": []
+          "dateInstances": [],
+          "datasetExtensions": [
+            {
+              "id": "order_lines",
+              "workspaceDataFilterReferences": [
+                {
+                  "filterId": {
+                    "id": "wdf__state",
+                    "type": "workspaceDataFilter"
+                  },
+                  "filterColumn": "wdf__state",
+                  "filterColumnDataType": "STRING"
+                }
+              ]
+            }
+          ]
         }
       },
       "name": "Demo West",

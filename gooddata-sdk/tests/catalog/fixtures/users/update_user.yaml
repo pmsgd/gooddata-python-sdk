@@ -520,7 +520,7 @@ interactions:
             to access it.
           status: 404
           title: Not Found
-          traceId: a9505352d4839642
+          traceId: 1884456d0ecfb1bf
   - request:
       method: POST
       uri: http://localhost:3000/api/v1/entities/users
@@ -687,27 +687,6 @@ interactions:
       body:
         string:
           data:
-            - id: demo
-              type: user
-              attributes:
-                authenticationId: CiRiYmNlM2E5MC0yMTg2LTQzZmYtYTVhZi02MDZjMTFjMTAyMTESBWxvY2Fs
-              relationships:
-                userGroups:
-                  data:
-                    - id: adminGroup
-                      type: userGroup
-              links:
-                self: http://localhost:3000/api/v1/entities/users/demo
-            - id: admin
-              type: user
-              attributes: {}
-              relationships:
-                userGroups:
-                  data:
-                    - id: adminGroup
-                      type: userGroup
-              links:
-                self: http://localhost:3000/api/v1/entities/users/admin
             - id: demo2
               type: user
               attributes:
@@ -719,6 +698,27 @@ interactions:
                       type: userGroup
               links:
                 self: http://localhost:3000/api/v1/entities/users/demo2
+            - id: admin
+              type: user
+              attributes: {}
+              relationships:
+                userGroups:
+                  data:
+                    - id: adminGroup
+                      type: userGroup
+              links:
+                self: http://localhost:3000/api/v1/entities/users/admin
+            - id: demo
+              type: user
+              attributes:
+                authenticationId: CiRiYmNlM2E5MC0yMTg2LTQzZmYtYTVhZi02MDZjMTFjMTAyMTESBWxvY2Fs
+              relationships:
+                userGroups:
+                  data:
+                    - id: adminGroup
+                      type: userGroup
+              links:
+                self: http://localhost:3000/api/v1/entities/users/demo
           included:
             - id: adminGroup
               type: userGroup

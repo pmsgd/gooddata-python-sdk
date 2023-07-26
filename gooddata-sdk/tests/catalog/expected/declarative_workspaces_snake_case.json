@@ -23,6 +23,9 @@
                   "multivalue": false,
                   "source_columns": [
                     "campaign_id"
+                  ],
+                  "source_column_data_types": [
+                    "INT"
                   ]
                 }
               ],
@@ -32,6 +35,7 @@
                   "id": "campaign_channel_id",
                   "title": "Campaign channel id",
                   "source_column": "campaign_channel_id",
+                  "source_column_data_type": "STRING",
                   "labels": [],
                   "description": "Campaign channel id",
                   "tags": [
@@ -42,6 +46,7 @@
                   "id": "campaign_channels.category",
                   "title": "Category",
                   "source_column": "category",
+                  "source_column_data_type": "STRING",
                   "labels": [],
                   "description": "Category",
                   "tags": [
@@ -52,6 +57,7 @@
                   "id": "type",
                   "title": "Type",
                   "source_column": "type",
+                  "source_column_data_type": "STRING",
                   "labels": [],
                   "description": "Type",
                   "tags": [
@@ -64,6 +70,7 @@
                   "id": "budget",
                   "title": "Budget",
                   "source_column": "budget",
+                  "source_column_data_type": "NUMERIC",
                   "description": "Budget",
                   "tags": [
                     "Campaign channels"
@@ -73,6 +80,7 @@
                   "id": "spend",
                   "title": "Spend",
                   "source_column": "spend",
+                  "source_column_data_type": "NUMERIC",
                   "description": "Spend",
                   "tags": [
                     "Campaign channels"
@@ -103,6 +111,7 @@
                   "id": "campaign_id",
                   "title": "Campaign id",
                   "source_column": "campaign_id",
+                  "source_column_data_type": "INT",
                   "labels": [],
                   "description": "Campaign id",
                   "tags": [
@@ -113,6 +122,7 @@
                   "id": "campaign_name",
                   "title": "Campaign name",
                   "source_column": "campaign_name",
+                  "source_column_data_type": "STRING",
                   "labels": [],
                   "description": "Campaign name",
                   "tags": [
@@ -145,6 +155,7 @@
                   "id": "customer_id",
                   "title": "Customer id",
                   "source_column": "customer_id",
+                  "source_column_data_type": "INT",
                   "labels": [],
                   "description": "Customer id",
                   "tags": [
@@ -155,6 +166,7 @@
                   "id": "customer_name",
                   "title": "Customer name",
                   "source_column": "customer_name",
+                  "source_column_data_type": "STRING",
                   "labels": [],
                   "description": "Customer name",
                   "tags": [
@@ -165,6 +177,7 @@
                   "id": "region",
                   "title": "Region",
                   "source_column": "region",
+                  "source_column_data_type": "STRING",
                   "labels": [],
                   "description": "Region",
                   "tags": [
@@ -175,11 +188,13 @@
                   "id": "state",
                   "title": "State",
                   "source_column": "state",
+                  "source_column_data_type": "STRING",
                   "labels": [
                     {
                       "id": "geo__state__location",
                       "title": "Location",
                       "source_column": "geo__state__location",
+                      "source_column_data_type": "STRING",
                       "description": "Location",
                       "tags": [
                         "Customers"
@@ -218,6 +233,9 @@
                   "multivalue": false,
                   "source_columns": [
                     "campaign_id"
+                  ],
+                  "source_column_data_types": [
+                    "INT"
                   ]
                 },
                 {
@@ -227,6 +245,9 @@
                   "multivalue": false,
                   "source_columns": [
                     "customer_id"
+                  ],
+                  "source_column_data_types": [
+                    "INT"
                   ]
                 },
                 {
@@ -236,6 +257,9 @@
                   "multivalue": false,
                   "source_columns": [
                     "date"
+                  ],
+                  "source_column_data_types": [
+                    "DATE"
                   ]
                 },
                 {
@@ -245,6 +269,9 @@
                   "multivalue": false,
                   "source_columns": [
                     "product_id"
+                  ],
+                  "source_column_data_types": [
+                    "INT"
                   ]
                 }
               ],
@@ -254,6 +281,7 @@
                   "id": "order_id",
                   "title": "Order id",
                   "source_column": "order_id",
+                  "source_column_data_type": "STRING",
                   "labels": [],
                   "description": "Order id",
                   "tags": [
@@ -264,6 +292,7 @@
                   "id": "order_line_id",
                   "title": "Order line id",
                   "source_column": "order_line_id",
+                  "source_column_data_type": "STRING",
                   "labels": [],
                   "description": "Order line id",
                   "tags": [
@@ -274,6 +303,7 @@
                   "id": "order_status",
                   "title": "Order status",
                   "source_column": "order_status",
+                  "source_column_data_type": "STRING",
                   "labels": [],
                   "description": "Order status",
                   "tags": [
@@ -286,6 +316,7 @@
                   "id": "price",
                   "title": "Price",
                   "source_column": "price",
+                  "source_column_data_type": "NUMERIC",
                   "description": "Price",
                   "tags": [
                     "Order lines"
@@ -295,6 +326,7 @@
                   "id": "quantity",
                   "title": "Quantity",
                   "source_column": "quantity",
+                  "source_column_data_type": "NUMERIC",
                   "description": "Quantity",
                   "tags": [
                     "Order lines"
@@ -307,6 +339,16 @@
               },
               "tags": [
                 "Order lines"
+              ],
+              "workspace_data_filter_references": [
+                {
+                  "filter_id": {
+                    "id": "wdf__region",
+                    "type": "workspaceDataFilter"
+                  },
+                  "filter_column": "wdf__region",
+                  "filter_column_data_type": "STRING"
+                }
               ]
             },
             {
@@ -325,6 +367,7 @@
                   "id": "product_id",
                   "title": "Product id",
                   "source_column": "product_id",
+                  "source_column_data_type": "INT",
                   "labels": [],
                   "description": "Product id",
                   "tags": [
@@ -335,6 +378,7 @@
                   "id": "product_name",
                   "title": "Product name",
                   "source_column": "product_name",
+                  "source_column_data_type": "STRING",
                   "labels": [],
                   "description": "Product name",
                   "tags": [
@@ -345,6 +389,7 @@
                   "id": "products.category",
                   "title": "Category",
                   "source_column": "category",
+                  "source_column_data_type": "STRING",
                   "labels": [],
                   "description": "Category",
                   "tags": [
@@ -2680,7 +2725,22 @@
       "model": {
         "ldm": {
           "datasets": [],
-          "date_instances": []
+          "date_instances": [],
+          "dataset_extensions": [
+            {
+              "id": "order_lines",
+              "workspace_data_filter_references": [
+                {
+                  "filter_id": {
+                    "id": "wdf__state",
+                    "type": "workspaceDataFilter"
+                  },
+                  "filter_column": "wdf__state",
+                  "filter_column_data_type": "STRING"
+                }
+              ]
+            }
+          ]
         },
         "analytics": {
           "analytical_dashboards": [],

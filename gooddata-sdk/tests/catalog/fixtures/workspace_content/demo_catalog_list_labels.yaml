@@ -76,6 +76,168 @@ interactions:
       body:
         string:
           data:
+            - id: campaign_channel_id
+              type: label
+              attributes:
+                title: Campaign channel id
+                description: Campaign channel id
+                tags:
+                  - Campaign channels
+                primary: true
+                sourceColumn: campaign_channel_id
+                sourceColumnDataType: STRING
+                valueType: TEXT
+                areRelationsValid: true
+              links:
+                self: http://localhost:3000/api/v1/entities/workspaces/demo/labels/campaign_channel_id
+              meta:
+                origin:
+                  originType: NATIVE
+                  originId: demo
+            - id: campaign_channels.category
+              type: label
+              attributes:
+                title: Category
+                description: Category
+                tags:
+                  - Campaign channels
+                primary: true
+                sourceColumn: category
+                sourceColumnDataType: STRING
+                valueType: TEXT
+                areRelationsValid: true
+              links:
+                self: http://localhost:3000/api/v1/entities/workspaces/demo/labels/campaign_channels.category
+              meta:
+                origin:
+                  originType: NATIVE
+                  originId: demo
+            - id: type
+              type: label
+              attributes:
+                title: Type
+                description: Type
+                tags:
+                  - Campaign channels
+                primary: true
+                sourceColumn: type
+                sourceColumnDataType: STRING
+                valueType: TEXT
+                areRelationsValid: true
+              links:
+                self: http://localhost:3000/api/v1/entities/workspaces/demo/labels/type
+              meta:
+                origin:
+                  originType: NATIVE
+                  originId: demo
+            - id: campaign_id
+              type: label
+              attributes:
+                title: Campaign id
+                description: Campaign id
+                tags:
+                  - Campaigns
+                primary: true
+                sourceColumn: campaign_id
+                sourceColumnDataType: INT
+                valueType: TEXT
+                areRelationsValid: true
+              links:
+                self: http://localhost:3000/api/v1/entities/workspaces/demo/labels/campaign_id
+              meta:
+                origin:
+                  originType: NATIVE
+                  originId: demo
+            - id: campaign_name
+              type: label
+              attributes:
+                title: Campaign name
+                description: Campaign name
+                tags:
+                  - Campaigns
+                primary: true
+                sourceColumn: campaign_name
+                sourceColumnDataType: STRING
+                valueType: TEXT
+                areRelationsValid: true
+              links:
+                self: http://localhost:3000/api/v1/entities/workspaces/demo/labels/campaign_name
+              meta:
+                origin:
+                  originType: NATIVE
+                  originId: demo
+            - id: customer_id
+              type: label
+              attributes:
+                title: Customer id
+                description: Customer id
+                tags:
+                  - Customers
+                primary: true
+                sourceColumn: customer_id
+                sourceColumnDataType: INT
+                valueType: TEXT
+                areRelationsValid: true
+              links:
+                self: http://localhost:3000/api/v1/entities/workspaces/demo/labels/customer_id
+              meta:
+                origin:
+                  originType: NATIVE
+                  originId: demo
+            - id: customer_name
+              type: label
+              attributes:
+                title: Customer name
+                description: Customer name
+                tags:
+                  - Customers
+                primary: true
+                sourceColumn: customer_name
+                sourceColumnDataType: STRING
+                valueType: TEXT
+                areRelationsValid: true
+              links:
+                self: http://localhost:3000/api/v1/entities/workspaces/demo/labels/customer_name
+              meta:
+                origin:
+                  originType: NATIVE
+                  originId: demo
+            - id: region
+              type: label
+              attributes:
+                title: Region
+                description: Region
+                tags:
+                  - Customers
+                primary: true
+                sourceColumn: region
+                sourceColumnDataType: STRING
+                valueType: TEXT
+                areRelationsValid: true
+              links:
+                self: http://localhost:3000/api/v1/entities/workspaces/demo/labels/region
+              meta:
+                origin:
+                  originType: NATIVE
+                  originId: demo
+            - id: state
+              type: label
+              attributes:
+                title: State
+                description: State
+                tags:
+                  - Customers
+                primary: true
+                sourceColumn: state
+                sourceColumnDataType: STRING
+                valueType: TEXT
+                areRelationsValid: true
+              links:
+                self: http://localhost:3000/api/v1/entities/workspaces/demo/labels/state
+              meta:
+                origin:
+                  originType: NATIVE
+                  originId: demo
             - id: date.minute
               type: label
               attributes:
@@ -316,168 +478,6 @@ interactions:
                 origin:
                   originType: NATIVE
                   originId: demo
-            - id: campaign_channel_id
-              type: label
-              attributes:
-                title: Campaign channel id
-                description: Campaign channel id
-                tags:
-                  - Campaign channels
-                primary: true
-                sourceColumn: campaign_channel_id
-                sourceColumnDataType: STRING
-                valueType: TEXT
-                areRelationsValid: true
-              links:
-                self: http://localhost:3000/api/v1/entities/workspaces/demo/labels/campaign_channel_id
-              meta:
-                origin:
-                  originType: NATIVE
-                  originId: demo
-            - id: campaign_channels.category
-              type: label
-              attributes:
-                title: Category
-                description: Category
-                tags:
-                  - Campaign channels
-                primary: true
-                sourceColumn: category
-                sourceColumnDataType: STRING
-                valueType: TEXT
-                areRelationsValid: true
-              links:
-                self: http://localhost:3000/api/v1/entities/workspaces/demo/labels/campaign_channels.category
-              meta:
-                origin:
-                  originType: NATIVE
-                  originId: demo
-            - id: type
-              type: label
-              attributes:
-                title: Type
-                description: Type
-                tags:
-                  - Campaign channels
-                primary: true
-                sourceColumn: type
-                sourceColumnDataType: STRING
-                valueType: TEXT
-                areRelationsValid: true
-              links:
-                self: http://localhost:3000/api/v1/entities/workspaces/demo/labels/type
-              meta:
-                origin:
-                  originType: NATIVE
-                  originId: demo
-            - id: campaign_id
-              type: label
-              attributes:
-                title: Campaign id
-                description: Campaign id
-                tags:
-                  - Campaigns
-                primary: true
-                sourceColumn: campaign_id
-                sourceColumnDataType: INT
-                valueType: TEXT
-                areRelationsValid: true
-              links:
-                self: http://localhost:3000/api/v1/entities/workspaces/demo/labels/campaign_id
-              meta:
-                origin:
-                  originType: NATIVE
-                  originId: demo
-            - id: campaign_name
-              type: label
-              attributes:
-                title: Campaign name
-                description: Campaign name
-                tags:
-                  - Campaigns
-                primary: true
-                sourceColumn: campaign_name
-                sourceColumnDataType: STRING
-                valueType: TEXT
-                areRelationsValid: true
-              links:
-                self: http://localhost:3000/api/v1/entities/workspaces/demo/labels/campaign_name
-              meta:
-                origin:
-                  originType: NATIVE
-                  originId: demo
-            - id: customer_id
-              type: label
-              attributes:
-                title: Customer id
-                description: Customer id
-                tags:
-                  - Customers
-                primary: true
-                sourceColumn: customer_id
-                sourceColumnDataType: INT
-                valueType: TEXT
-                areRelationsValid: true
-              links:
-                self: http://localhost:3000/api/v1/entities/workspaces/demo/labels/customer_id
-              meta:
-                origin:
-                  originType: NATIVE
-                  originId: demo
-            - id: customer_name
-              type: label
-              attributes:
-                title: Customer name
-                description: Customer name
-                tags:
-                  - Customers
-                primary: true
-                sourceColumn: customer_name
-                sourceColumnDataType: STRING
-                valueType: TEXT
-                areRelationsValid: true
-              links:
-                self: http://localhost:3000/api/v1/entities/workspaces/demo/labels/customer_name
-              meta:
-                origin:
-                  originType: NATIVE
-                  originId: demo
-            - id: region
-              type: label
-              attributes:
-                title: Region
-                description: Region
-                tags:
-                  - Customers
-                primary: true
-                sourceColumn: region
-                sourceColumnDataType: STRING
-                valueType: TEXT
-                areRelationsValid: true
-              links:
-                self: http://localhost:3000/api/v1/entities/workspaces/demo/labels/region
-              meta:
-                origin:
-                  originType: NATIVE
-                  originId: demo
-            - id: state
-              type: label
-              attributes:
-                title: State
-                description: State
-                tags:
-                  - Customers
-                primary: true
-                sourceColumn: state
-                sourceColumnDataType: STRING
-                valueType: TEXT
-                areRelationsValid: true
-              links:
-                self: http://localhost:3000/api/v1/entities/workspaces/demo/labels/state
-              meta:
-                origin:
-                  originType: NATIVE
-                  originId: demo
             - id: geo__state__location
               type: label
               attributes:
@@ -549,6 +549,24 @@ interactions:
                 origin:
                   originType: NATIVE
                   originId: demo
+            - id: products.category
+              type: label
+              attributes:
+                title: Category
+                description: Category
+                tags:
+                  - Products
+                primary: true
+                sourceColumn: category
+                sourceColumnDataType: STRING
+                valueType: TEXT
+                areRelationsValid: true
+              links:
+                self: http://localhost:3000/api/v1/entities/workspaces/demo/labels/products.category
+              meta:
+                origin:
+                  originType: NATIVE
+                  originId: demo
             - id: product_id
               type: label
               attributes:
@@ -581,24 +599,6 @@ interactions:
                 areRelationsValid: true
               links:
                 self: http://localhost:3000/api/v1/entities/workspaces/demo/labels/product_name
-              meta:
-                origin:
-                  originType: NATIVE
-                  originId: demo
-            - id: products.category
-              type: label
-              attributes:
-                title: Category
-                description: Category
-                tags:
-                  - Products
-                primary: true
-                sourceColumn: category
-                sourceColumnDataType: STRING
-                valueType: TEXT
-                areRelationsValid: true
-              links:
-                self: http://localhost:3000/api/v1/entities/workspaces/demo/labels/products.category
               meta:
                 origin:
                   originType: NATIVE

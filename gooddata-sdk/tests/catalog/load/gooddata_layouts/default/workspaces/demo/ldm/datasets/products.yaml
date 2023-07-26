@@ -4,6 +4,7 @@ attributes:
     id: product_id
     labels: []
     sourceColumn: product_id
+    sourceColumnDataType: INT
     tags:
       - Products
     title: Product id
@@ -11,6 +12,7 @@ attributes:
     id: product_name
     labels: []
     sourceColumn: product_name
+    sourceColumnDataType: STRING
     tags:
       - Products
     title: Product name
@@ -18,6 +20,7 @@ attributes:
     id: products.category
     labels: []
     sourceColumn: category
+    sourceColumnDataType: STRING
     tags:
       - Products
     title: Category

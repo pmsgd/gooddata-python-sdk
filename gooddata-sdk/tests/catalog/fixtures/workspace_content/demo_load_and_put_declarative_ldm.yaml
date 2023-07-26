@@ -79,7 +79,7 @@ interactions:
             to access it.
           status: 404
           title: Not Found
-          traceId: 5da7245e25436f26
+          traceId: 87c24dae09eee212
   - request:
       method: POST
       uri: http://localhost:3000/api/v1/entities/workspaces
@@ -708,7 +708,7 @@ interactions:
             attributes:
               name: Default Organization
               hostname: localhost
-              oauthClientId: 87f79525-9f74-4f8e-bc98-b3f383983e73
+              oauthClientId: 3313102e-4129-4ce0-a149-08d30e28b12b
           links:
             self: http://localhost:3000/api/v1/entities/admin/organizations/default
   - request:
@@ -728,6 +728,8 @@ interactions:
                   multivalue: false
                   sourceColumns:
                     - campaign_id
+                  sourceColumnDataTypes:
+                    - INT
               title: Campaign channels
               description: Campaign channels
               attributes:
@@ -735,6 +737,7 @@ interactions:
                   labels: []
                   sourceColumn: campaign_channel_id
                   title: Campaign channel id
+                  sourceColumnDataType: INT
                   description: Campaign channel id
                   tags:
                     - Campaign channels
@@ -742,6 +745,7 @@ interactions:
                   labels: []
                   sourceColumn: category
                   title: Category
+                  sourceColumnDataType: STRING
                   description: Category
                   tags:
                     - Campaign channels
@@ -749,6 +753,7 @@ interactions:
                   labels: []
                   sourceColumn: type
                   title: Type
+                  sourceColumnDataType: STRING
                   description: Type
                   tags:
                     - Campaign channels
@@ -756,12 +761,14 @@ interactions:
                 - id: budget
                   sourceColumn: budget
                   title: Budget
+                  sourceColumnDataType: NUMERIC
                   description: Budget
                   tags:
                     - Campaign channels
                 - id: spend
                   sourceColumn: spend
                   title: Spend
+                  sourceColumnDataType: NUMERIC
                   description: Spend
                   tags:
                     - Campaign channels
@@ -783,6 +790,7 @@ interactions:
                   labels: []
                   sourceColumn: campaign_id
                   title: Campaign id
+                  sourceColumnDataType: INT
                   description: Campaign id
                   tags:
                     - Campaigns
@@ -790,6 +798,7 @@ interactions:
                   labels: []
                   sourceColumn: campaign_name
                   title: Campaign name
+                  sourceColumnDataType: STRING
                   description: Campaign name
                   tags:
                     - Campaigns
@@ -812,6 +821,7 @@ interactions:
                   labels: []
                   sourceColumn: customer_id
                   title: Customer id
+                  sourceColumnDataType: INT
                   description: Customer id
                   tags:
                     - Customers
@@ -819,6 +829,7 @@ interactions:
                   labels: []
                   sourceColumn: customer_name
                   title: Customer name
+                  sourceColumnDataType: STRING
                   description: Customer name
                   tags:
                     - Customers
@@ -826,6 +837,7 @@ interactions:
                   labels: []
                   sourceColumn: region
                   title: Region
+                  sourceColumnDataType: STRING
                   description: Region
                   tags:
                     - Customers
@@ -834,11 +846,13 @@ interactions:
                     - id: geo__state__location
                       sourceColumn: geo__state__location
                       title: Location
+                      sourceColumnDataType: STRING
                       description: Location
                       tags:
                         - Customers
                   sourceColumn: state
                   title: State
+                  sourceColumnDataType: STRING
                   description: State
                   tags:
                     - Customers
@@ -860,24 +874,32 @@ interactions:
                   multivalue: false
                   sourceColumns:
                     - campaign_id
+                  sourceColumnDataTypes:
+                    - INT
                 - identifier:
                     id: customers
                     type: dataset
                   multivalue: false
                   sourceColumns:
                     - customer_id
+                  sourceColumnDataTypes:
+                    - INT
                 - identifier:
                     id: date
                     type: dataset
                   multivalue: false
                   sourceColumns:
                     - date
+                  sourceColumnDataTypes:
+                    - DATE
                 - identifier:
                     id: products
                     type: dataset
                   multivalue: false
                   sourceColumns:
                     - product_id
+                  sourceColumnDataTypes:
+                    - INT
               title: Order lines
               description: Order lines
               attributes:
@@ -885,6 +907,7 @@ interactions:
                   labels: []
                   sourceColumn: order_id
                   title: Order id
+                  sourceColumnDataType: INT
                   description: Order id
                   tags:
                     - Order lines
@@ -892,6 +915,7 @@ interactions:
                   labels: []
                   sourceColumn: order_line_id
                   title: Order line id
+                  sourceColumnDataType: INT
                   description: Order line id
                   tags:
                     - Order lines
@@ -899,6 +923,7 @@ interactions:
                   labels: []
                   sourceColumn: order_status
                   title: Order status
+                  sourceColumnDataType: STRING
                   description: Order status
                   tags:
                     - Order lines
@@ -906,12 +931,14 @@ interactions:
                 - id: price
                   sourceColumn: price
                   title: Price
+                  sourceColumnDataType: NUMERIC
                   description: Price
                   tags:
                     - Order lines
                 - id: quantity
                   sourceColumn: quantity
                   title: Quantity
+                  sourceColumnDataType: NUMERIC
                   description: Quantity
                   tags:
                     - Order lines
@@ -933,6 +960,7 @@ interactions:
                   labels: []
                   sourceColumn: product_id
                   title: Product id
+                  sourceColumnDataType: INT
                   description: Product id
                   tags:
                     - Products
@@ -940,6 +968,7 @@ interactions:
                   labels: []
                   sourceColumn: product_name
                   title: Product name
+                  sourceColumnDataType: STRING
                   description: Product name
                   tags:
                     - Products
@@ -947,6 +976,7 @@ interactions:
                   labels: []
                   sourceColumn: category
                   title: Category
+                  sourceColumnDataType: STRING
                   description: Category
                   tags:
                     - Products
