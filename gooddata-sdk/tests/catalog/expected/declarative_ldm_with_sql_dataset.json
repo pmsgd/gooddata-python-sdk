@@ -18,6 +18,9 @@
             "multivalue": false,
             "sourceColumns": [
               "campaign_id"
+            ],
+            "sourceColumnDataTypes": [
+              "INT"
             ]
           }
         ],
@@ -28,6 +31,7 @@
             "id": "campaign_channel_id",
             "labels": [],
             "sourceColumn": "campaign_channel_id",
+            "sourceColumnDataType": "STRING",
             "title": "Campaign channel id",
             "description": "Campaign channel id",
             "tags": [
@@ -38,6 +42,7 @@
             "id": "campaign_channels.category",
             "labels": [],
             "sourceColumn": "category",
+            "sourceColumnDataType": "STRING",
             "title": "Category",
             "description": "Category",
             "tags": [
@@ -48,6 +53,7 @@
             "id": "type",
             "labels": [],
             "sourceColumn": "type",
+            "sourceColumnDataType": "STRING",
             "title": "Type",
             "description": "Type",
             "tags": [
@@ -59,6 +65,7 @@
           {
             "id": "budget",
             "sourceColumn": "budget",
+            "sourceColumnDataType": "NUMERIC",
             "title": "Budget",
             "description": "Budget",
             "tags": [
@@ -68,6 +75,7 @@
           {
             "id": "spend",
             "sourceColumn": "spend",
+            "sourceColumnDataType": "NUMERIC",
             "title": "Spend",
             "description": "Spend",
             "tags": [
@@ -100,6 +108,7 @@
             "id": "campaign_name",
             "labels": [],
             "sourceColumn": "campaign_name",
+            "sourceColumnDataType": "STRING",
             "title": "Campaign name",
             "description": "Campaign name",
             "tags": [
@@ -110,6 +119,7 @@
             "id": "campaigns.campaign_id",
             "labels": [],
             "sourceColumn": "campaign_id",
+            "sourceColumnDataType": "INT",
             "title": "Campaign id",
             "description": "Campaign id",
             "tags": [
@@ -143,6 +153,7 @@
             "id": "customers.customer_id",
             "labels": [],
             "sourceColumn": "customer_id",
+            "sourceColumnDataType": "INT",
             "title": "Customer id",
             "description": "Customer id",
             "tags": [
@@ -153,6 +164,7 @@
             "id": "customers.customer_name",
             "labels": [],
             "sourceColumn": "customer_name",
+            "sourceColumnDataType": "STRING",
             "title": "Customer name",
             "description": "Customer name",
             "tags": [
@@ -163,6 +175,7 @@
             "id": "customers.region",
             "labels": [],
             "sourceColumn": "region",
+            "sourceColumnDataType": "STRING",
             "title": "Region",
             "description": "Region",
             "tags": [
@@ -175,6 +188,7 @@
               {
                 "id": "geo__state__location",
                 "sourceColumn": "geo__state__location",
+                "sourceColumnDataType": "STRING",
                 "title": "Location",
                 "description": "Location",
                 "tags": [
@@ -183,6 +197,7 @@
               }
             ],
             "sourceColumn": "state",
+            "sourceColumnDataType": "STRING",
             "title": "State",
             "description": "State",
             "tags": [
@@ -217,6 +232,9 @@
             "multivalue": false,
             "sourceColumns": [
               "campaign_id"
+            ],
+            "sourceColumnDataTypes": [
+              "INT"
             ]
           },
           {
@@ -227,6 +245,9 @@
             "multivalue": false,
             "sourceColumns": [
               "customer_id"
+            ],
+            "sourceColumnDataTypes": [
+              "INT"
             ]
           },
           {
@@ -237,6 +258,9 @@
             "multivalue": false,
             "sourceColumns": [
               "date"
+            ],
+            "sourceColumnDataTypes": [
+              "DATE"
             ]
           },
           {
@@ -247,6 +271,9 @@
             "multivalue": false,
             "sourceColumns": [
               "product_id"
+            ],
+            "sourceColumnDataTypes": [
+              "INT"
             ]
           }
         ],
@@ -257,6 +284,7 @@
             "id": "order_lines.order_id",
             "labels": [],
             "sourceColumn": "order_id",
+            "sourceColumnDataType": "STRING",
             "title": "Order id",
             "description": "Order id",
             "tags": [
@@ -267,6 +295,7 @@
             "id": "order_lines.order_line_id",
             "labels": [],
             "sourceColumn": "order_line_id",
+            "sourceColumnDataType": "STRING",
             "title": "Order line id",
             "description": "Order line id",
             "tags": [
@@ -277,6 +306,7 @@
             "id": "order_lines.order_status",
             "labels": [],
             "sourceColumn": "order_status",
+            "sourceColumnDataType": "STRING",
             "title": "Order status",
             "description": "Order status",
             "tags": [
@@ -288,6 +318,7 @@
           {
             "id": "order_lines.price",
             "sourceColumn": "price",
+            "sourceColumnDataType": "NUMERIC",
             "title": "Price",
             "description": "Price",
             "tags": [
@@ -297,6 +328,7 @@
           {
             "id": "order_lines.quantity",
             "sourceColumn": "quantity",
+            "sourceColumnDataType": "NUMERIC",
             "title": "Quantity",
             "description": "Quantity",
             "tags": [
@@ -339,6 +371,7 @@
             "id": "product_name",
             "labels": [],
             "sourceColumn": "product_name",
+            "sourceColumnDataType": "STRING",
             "title": "Product name",
             "description": "Product name",
             "tags": [
@@ -349,6 +382,7 @@
             "id": "products.category",
             "labels": [],
             "sourceColumn": "category",
+            "sourceColumnDataType": "STRING",
             "title": "Category",
             "description": "Category",
             "tags": [
@@ -359,6 +393,7 @@
             "id": "products.product_id",
             "labels": [],
             "sourceColumn": "product_id",
+            "sourceColumnDataType": "INT",
             "title": "Product id",
             "description": "Product id",
             "tags": [

@@ -99,14 +99,14 @@ interactions:
               userGroups:
                 - id: adminGroup
                   type: userGroup
-            - authId: CiQxYTMwZGVlZi0yNWY4LTQ2ZjgtOWE1YS0zMGU1ZGYzZWQwZTcSBWxvY2Fs
+            - authId: CiRiYmNlM2E5MC0yMTg2LTQzZmYtYTVhZi02MDZjMTFjMTAyMTESBWxvY2Fs
               id: demo
               permissions: []
               settings: []
               userGroups:
                 - id: adminGroup
                   type: userGroup
-            - authId: CiRiYjg4OTdhMS01ZjExLTRhZGEtOWY3OC00ZjZlZTRhYzk4ZDUSBWxvY2Fs
+            - authId: CiRhOTc1Mzk4OS0xYzdhLTRiMjMtODU0ZS02MDc0ZjMyMDc3YzkSBWxvY2Fs
               id: demo2
               permissions: []
               settings: []
@@ -210,14 +210,14 @@ interactions:
               userGroups:
                 - id: adminGroup
                   type: userGroup
-            - authId: CiQxYTMwZGVlZi0yNWY4LTQ2ZjgtOWE1YS0zMGU1ZGYzZWQwZTcSBWxvY2Fs
+            - authId: CiRiYmNlM2E5MC0yMTg2LTQzZmYtYTVhZi02MDZjMTFjMTAyMTESBWxvY2Fs
               id: demo
               permissions: []
               settings: []
               userGroups:
                 - id: adminGroup
                   type: userGroup
-            - authId: CiRiYjg4OTdhMS01ZjExLTRhZGEtOWY3OC00ZjZlZTRhYzk4ZDUSBWxvY2Fs
+            - authId: CiRhOTc1Mzk4OS0xYzdhLTRiMjMtODU0ZS02MDc0ZjMyMDc3YzkSBWxvY2Fs
               id: demo2
               permissions: []
               settings: []
@@ -372,7 +372,7 @@ interactions:
             attributes:
               name: Default Organization
               hostname: localhost
-              oauthClientId: 7610ecf2-e15c-46c6-a1c0-97a513ff7b41
+              oauthClientId: 87f79525-9f74-4f8e-bc98-b3f383983e73
           links:
             self: http://localhost:3000/api/v1/entities/admin/organizations/default
   - request:
@@ -523,6 +523,6 @@ interactions:
             attributes:
               name: Default Organization
               hostname: localhost
-              oauthClientId: 7610ecf2-e15c-46c6-a1c0-97a513ff7b41
+              oauthClientId: 87f79525-9f74-4f8e-bc98-b3f383983e73
           links:
             self: http://localhost:3000/api/v1/entities/admin/organizations/default

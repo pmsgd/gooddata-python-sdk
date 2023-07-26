@@ -41,7 +41,9 @@ from gooddata_sdk import (
     VerticaAttributes,
 )
 from gooddata_sdk.catalog.workspace.declarative_model.workspace.logical_model.dataset.dataset import (
+    CatalogDatasetWorkspaceDataFilterIdentifier,
     CatalogDeclarativeWorkspaceDataFilterColumn,
+    CatalogDeclarativeWorkspaceDataFilterReferences,
 )
 
 gd_vcr = get_vcr()
@@ -78,6 +80,18 @@ def test_generate_logical_model(test_config: dict):
     order_lines_dataset.workspace_data_filter_columns = [
         CatalogDeclarativeWorkspaceDataFilterColumn(name="wdf__region", data_type="STRING"),
         CatalogDeclarativeWorkspaceDataFilterColumn(name="wdf__state", data_type="STRING"),
+    ]
+
+    generated_order_lines_dataset = [
+        dataset for dataset in generated_declarative_model.ldm.datasets if dataset.id == "order_lines"
+    ]
+    generated_order_lines_dataset = generated_order_lines_dataset[0]
+    generated_order_lines_dataset.workspace_data_filter_references = [
+        CatalogDeclarativeWorkspaceDataFilterReferences(
+            filter_id=CatalogDatasetWorkspaceDataFilterIdentifier(id="wdf__region", type="workspaceDataFilter"),
+            filter_column="wdf__region",
+            filter_column_data_type="STRING",
+        )
     ]
 
     """

@@ -79,7 +79,7 @@ interactions:
             to access it.
           status: 404
           title: Not Found
-          traceId: 4c33a8a1f125bfb8
+          traceId: b41fac8238fbf1f5
   - request:
       method: POST
       uri: http://localhost:3000/api/v1/entities/dataSources
@@ -177,9 +177,9 @@ interactions:
               enableCaching: true
               cachePath:
                 - $scratch
+              name: Dremio
               type: DREMIO
               schema: ''
-              name: Dremio
           links:
             self: http://localhost:3000/api/v1/entities/dataSources/dremio
   - request:
@@ -264,9 +264,9 @@ interactions:
               enableCaching: true
               cachePath:
                 - $scratch
+              name: Dremio
               type: DREMIO
               schema: ''
-              name: Dremio
           links:
             self: http://localhost:3000/api/v1/entities/dataSources/dremio
   - request:

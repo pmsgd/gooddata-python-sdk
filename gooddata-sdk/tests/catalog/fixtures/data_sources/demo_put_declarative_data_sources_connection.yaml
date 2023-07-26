@@ -298,7 +298,7 @@ interactions:
       body:
         string:
           queryDurationMillis:
-            simpleSelect: 6
+            simpleSelect: 5
           successful: true
   - request:
       method: PUT
